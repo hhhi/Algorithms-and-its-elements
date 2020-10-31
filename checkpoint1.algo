@@ -1,0 +1,23 @@
+ALGORITHM Algorithms and its elements
+VAR
+    a := CHAR := ' ';
+    N_words := INTEGER := 0 ;
+    N_characters :=INTEGER := 0;
+    n_vowels := INTEGER := 0;
+
+BEGIN
+    WHILE (x <> '.') DO
+    read(x);
+    N_characters := N_characters +1;
+        IF (x = 'a' OR x='e' OR x='i' OR x='o' OR x='u' OR x='y') THEN
+        n_vowels := n_vowels +1;
+        END_IF
+        IF (x=' ') THEN
+        N_words := N_words +1;
+        END_IF
+
+    END_WHILE
+    Write("The length of the sentence is ",N_characters);
+    Write("The number of words in the sentence is ",N_words);
+    Write("he number of vowels in the sentence. is ",n_vowels);
+END
